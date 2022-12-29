@@ -6,7 +6,6 @@ body {
 }
 
 .btn-container {
-  border: 1px dashed #000000;
   background: #101010;
   min-width: 60vw;
   height: 60vh;
