@@ -16,4 +16,75 @@ body {
   justify-content: center;
 }
 
+.btn-hover {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-size: 0.875rem;
+  font-weight: bolder;
+  text-transform: uppercase;
+  padding: 18px 48px;
+  border-radius: 20px;
+  cursor: pointer;
+  background: #7f3ec0;
+  color: #fff;
+  border: 4px solid #fff;
+  position: relative;
+}
 
+.btn-hover:hover {
+  background: #101010;
+}
+
+.btn-hover::before {
+  content: '';
+  display: inline-block;
+  position: absolute;
+  top: -4px;
+  left: 20px;
+  background: #101010;
+  width: 14px;
+  height: 4px;
+  transform: skew(45deg);
+  animation: slide-right-out 0.5s forwards;
+}
+
+.btn-hover:hover::before {
+  animation: slide-right-in 0.5s forwards;
+}
+
+.btn-hover::after {
+  content: '';
+  display: inline-block;
+  position: absolute;
+  bottom: -4px;
+  right: 20px;
+  background: #101010;
+  width: 14px;
+  height: 4px;
+  transform: skew(45deg);
+  animation: slide-left-out 0.5s forwards;
+
+}
+
+.btn-hover:hover::after {
+  animation: slide-left-in 0.5s forwards;
+}
+
+@keyframes slide-right-in {
+  from { left: 20px;  }
+  to { left: 145px; }
+}
+
+@keyframes slide-left-in {
+  from { right: 20px;  }
+  to { right: 145px; }
+}
+
+@keyframes slide-right-out {
+  from { left: 145px;  }
+  to { left: 20px; }
+}
+
+@keyframes slide-left-out {
+  from { right: 145px;  }
+  to { right: 20px; }
+}
