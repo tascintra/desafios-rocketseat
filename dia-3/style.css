@@ -1,0 +1,18 @@
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+.display-container {
+  border: 1px dashed #000000;
+  background: #101010;
+  min-width: 60vw;
+  height: 60vh;
+  border-radius: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
