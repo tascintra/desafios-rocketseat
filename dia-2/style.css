@@ -44,11 +44,11 @@ body {
   width: 14px;
   height: 4px;
   transform: skew(45deg);
-  animation: slide-right-out 0.5s forwards;
+  animation: slide-right-out 0.4s forwards;
 }
 
 .btn-hover:hover::before {
-  animation: slide-right-in 0.5s forwards;
+  animation: slide-right-in 0.4s forwards;
 }
 
 .btn-hover::after {
@@ -61,12 +61,12 @@ body {
   width: 14px;
   height: 4px;
   transform: skew(45deg);
-  animation: slide-left-out 0.5s forwards;
+  animation: slide-left-out 0.4s forwards;
 
 }
 
 .btn-hover:hover::after {
-  animation: slide-left-in 0.5s forwards;
+  animation: slide-left-in 0.4s forwards;
 }
 
 @keyframes slide-right-in {
