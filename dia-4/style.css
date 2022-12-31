@@ -7,11 +7,14 @@ body {
 
 .badges-container {
   background: #101010;
-  min-width: 60vw;
-  height: 60vh;
+  max-width: 30vw;
+  height: 80vh;
   border-radius: 24px;
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
+.badges {
+  border-radius: 50%;
+}
