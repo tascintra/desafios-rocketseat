@@ -12,6 +12,7 @@ body {
   flex-direction: column;
   align-items: center;
   background: #141414;
+  min-width: 350px;
 }
 
 img {
@@ -20,17 +21,47 @@ img {
 
 h1 {
   font-family: 'Bitcrusher Bold', monospace;
-  font-size: 6rem;
+  font-size: 8rem;
   text-transform: uppercase;
+  line-height: 1;
   color: #fff;
-  text-shadow: rgba(255, 255, 255, 0.85) 1px 0 12px;
-  margin-top: 24px;
+  text-shadow: #fff 1px 0 12px;
+  margin-top: 48px;
 }
 
 h2 {
   font-family: 'Roboto', sans-serif;
-  font-size: 2rem;
+  font-size: 2.8rem;
   font-weight: lighter;
   color: #fff;
 }
 
+.links-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  justify-items: center;
+  gap: 56px;
+  margin-top: 48px;
+}
+
+.links-container a:last-child {
+  grid-column: span 2;
+}
+
+.links-container a {
+  font-family: 'Roboto Mono', monospace;;
+  font-size: 1.25rem;
+  font-weight: bold;
+  background: linear-gradient(to bottom, #7f3ec0, #4e217b);
+  color: #fff;
+  padding: 8px 24px;
+  border-radius: 8px;
+  text-decoration: none;
+  transition: all .2s ease-in-out;
+}
+
+.links-container a:hover {
+  transform: scale(1.1);
+  box-shadow: #8155ad 1px 0 12px;
+}
