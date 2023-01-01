@@ -26,6 +26,7 @@ body {
 .star {
   font-size: 2rem;
   filter: grayscale(100%);
+  transition: 0.3s;
 }
 
 .star-container {
