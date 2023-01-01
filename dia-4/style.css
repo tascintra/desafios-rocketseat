@@ -7,14 +7,28 @@ body {
 
 .badges-container {
   background: #101010;
-  max-width: 30vw;
-  height: 80vh;
+  min-width: 20vw;
+  height: 50vh;
+  padding: 52px;
   border-radius: 24px;
   display: grid;
+  grid-template-columns: 1fr 1fr;
   align-items: center;
-  justify-content: center;
+  justify-items: center;
+  gap: 12px;
+}
+
+.badges:last-child {
+  grid-column: span 2;
 }
 
 .badges {
   border-radius: 50%;
+  cursor: pointer;
+  filter: grayscale(100%);
+  transition: 0.4s;
+}
+
+.badges:hover {
+  filter: initial;
 }
