@@ -25,4 +25,15 @@ body {
 
 .star {
   font-size: 2rem;
+  filter: grayscale(100%);
+}
+
+.star-container {
+  direction: rtl;
+  cursor: pointer;
+}
+
+.star-container > .star:hover,
+.star-container > .star:hover ~ .star {
+   filter: initial;
 }
