@@ -18,9 +18,13 @@ h1 {
   font-family: 'Bitcrusher Bold', monospace;
   font-size: 6rem;
   text-transform: uppercase;
+  color: #fff;
+  text-shadow: #fff 1px 0 12px ;
 }
 
 h2 {
   font-family: 'Roboto', sans-serif;
   font-size: 2rem;
+  font-weight: lighter;
+  color: #fff;
 }
